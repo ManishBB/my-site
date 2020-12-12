@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align: center;">
+<br><br>
+<div id="myDiv" ><img src="image.jpg" style="padding: 20px;"></div>
+<br>
+<p>
+    Enter the choice among below to get the desired Border Style : 
+    <br>1)Solid &emsp;
+    2)Double &emsp;
+    3)Dashed &emsp;
+    4)Dotted
+</p>
+<input type="text" id="choice" name="choice"><br><br>
+<button type="button" onclick="myFunction()">Set solid border</button>
+
+<script>
+function myFunction() {
+
+    var choice = document.getElementById("choice").value;
+    
+    if(choice == 1){
+        document.getElementById("myDiv").style.borderStyle = "solid";
+    }
+    else if(choice == 2){
+        document.getElementById("myDiv").style.borderStyle = "double";
+    }
+    else if(choice == 3){
+        document.getElementById("myDiv").style.borderStyle = "dashed";
+    }
+    else if(choice == 4){
+        document.getElementById("myDiv").style.borderStyle = "dotted";
+    }
+    else{
+        window.alert("Enter Correct Choice from given!")
+    }
+}
+</script>
+</body>
+</html>
